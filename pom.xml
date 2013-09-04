@@ -26,7 +26,7 @@
     </parent>
     <groupId>com.jayway.maven.plugins.android.generation2</groupId>
     <artifactId>android-maven-plugin</artifactId>
-    <version>3.6.2-SNAPSHOT</version>
+    <version>3.6.2-touchtribe</version>
     <packaging>maven-plugin</packaging>
     <name>Android Maven Plugin - android-maven-plugin</name>
     <description>Maven Plugin for Android Development</description>
@@ -423,20 +423,10 @@
 
     <distributionManagement>
         <repository>
-            <id>oss.sonatype.org-jayway-staging</id>
-            <name>OpenSource Release Staging on Sonatype.org</name>
-            <url>http://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>thirdparty</id>
+            <name>Internal Releases</name>
+            <url>http://maven.techtribe.nl/nexus/content/repositories/thirdparty/</url>
         </repository>
-        <snapshotRepository>
-            <id>oss.sonatype.org-jayway-snapshots</id>
-            <name>Jayway OpenSource SNAPSHOTs on Sonatype.org</name>
-            <url>http://oss.sonatype.org/content/repositories/jayway-snapshots/</url>
-        </snapshotRepository>
-        <site>
-            <id>maven-android-plugin-m2site.googlecode.com</id>
-            <name>maven-android-plugin-m2site on Google Code</name>
-            <url>${env.MAVEN_ANDROID_PLUGIN_M2SITE_SVN_WORKINGCOPY}</url>
-        </site>
     </distributionManagement>
 
     <profiles>
